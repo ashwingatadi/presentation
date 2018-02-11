@@ -1,0 +1,27 @@
+<nav class="navbar navbar-expand-sm bg-info navbar-dark">
+  <div class="collapse navbar-collapse" id="navbarText">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/home" routerLinkActive="active" routerLinkActiveOptions="{exact: true}">Employee Project</a>
+      </li>
+    </ul>
+    <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/search" routerLinkActive="active" routerLinkActiveOptions="{exact: true}">Search</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" routerLinkActive="active" routerLinkActiveOptions="{exact: true}" id="navbardrop"
+            data-toggle="dropdown">
+            Statistics
+          </a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" routerLink="/stats/dept" routerLinkActive="active" routerLinkActiveOptions="{exact: true}">By Department</a>
+            <a class="dropdown-item" routerLink="/stats/empl" routerLinkActive="active" routerLinkActiveOptions="{exact: true}">By Employee</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/login" routerLinkActive="active" routerLinkActiveOptions="{exact: true}">Login</a>
+        </li>
+      </ul>
+  </div>
+</nav>

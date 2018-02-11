@@ -1,0 +1,50 @@
+<div class="row margin-top-50">
+  <div class="col-sm-8"></div>
+  <div class="col-sm-3">
+    <form>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+      </div>
+      <div class="form-group">
+        <label for="pwd">Password:</label>
+        <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+      </div>
+      <div class="form-group">
+        <label for="cpwd">Confirm Password:</label>
+        <input type="password" class="form-control" id="cpwd" placeholder="Confirm password" name="cpswd">
+      </div>
+      <div class="form-group">
+        <label for="gender">Gender:</label>
+        <div>
+          <label class="radio-inline">
+            <input type="radio" name="gender"> Male
+          </label>
+          <span>&nbsp;&nbsp;</span>
+          <label class="radio-inline">
+            <input type="radio" name="gender"> Female
+          </label>
+        </div>
+      </div>
+      <div class="form-group">
+          <label for="department">Department:</label>
+          <select id="department" name="department" class="form-control">
+            <option value="hr">Human Resources</option>
+            <option value="finance">Finance</option>
+            <option value="it">Information Technology</option>
+            <option value="admin">Administration</option>
+          </select>
+        </div>
+      <div class="align-right">
+        <button type="button" class="btn btn-info">Register</button>
+        <button type="button" class="btn btn-info">Cancel</button>
+      </div>
+      <br/>
+      <div class="text-info">
+        Already a member? Click
+        <a class="link link-color" (click) = 'ShowLogin()'>here</a> to login
+      </div>
+    </form>
+  </div>
+  <div class="col-sm-1"></div>
+</div>

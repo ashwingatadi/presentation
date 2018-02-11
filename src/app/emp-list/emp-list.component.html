@@ -1,0 +1,30 @@
+<div class="row top-margin-30">
+  <div class="col-sm-11 align-right">
+    <button type="button" class="btn btn-info">Add Employee</button>
+  </div>
+  <div class="col-sm-1"></div>
+</div>
+<div class="row header top-margin-20 border-collpse">
+  <div class="col-sm-2"></div>
+  <div class="col-sm-1 border-1">Name</div>
+  <div class="col-sm-1 border-1">Gender</div>
+  <div class="col-sm-2 border-1">Department</div>
+  <div class="col-sm-2 border-1">Date of Joining</div>
+  <div class="col-sm-1 border-1">Salary</div>
+  <div class="col-sm-2 border-1 border-right"></div>
+  <div class="col-sm-1"></div>
+  
+</div>
+<div class="row" *ngFor="let emp of empList">
+    <div class="col-sm-2"></div>
+  <div class="col-sm-1 border-1">{{emp.name}}</div>
+  <div class="col-sm-1 border-1">{{emp.gender}}</div>
+  <div class="col-sm-2 border-1">{{emp.department}}</div>
+  <div class="col-sm-2 border-1">{{emp.doj | date: 'MMM dd yyyy'}}</div>
+  <div class="col-sm-1 border-1">{{emp.salary}}</div>
+  <div class="col-sm-2 border-1 border-right">
+    <a>Edit</a> | <a>Delete</a>
+  </div>
+  <div class="col-sm-1"></div>
+  
+</div>
