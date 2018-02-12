@@ -7,14 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainmenuComponent implements OnInit {
 
-  userImageSrc: string = '~/resources/icons/user2424.png';
-  searchImgSrc: string = '~/resources/icons/search2424.png';
+  userImg2020: string;
+  searchImg2020: string;
 
   constructor() { }
 
   ngOnInit() {
-    this.userImageSrc = '/Users/ashwin/practice programs/emp-project/presentation/src/resources/icons/user2424.png';
-    this.searchImgSrc = '../resources/icons/search2424.png';
+    this.userImg2020 = 'assets/images/user2020.png';
+    this.searchImg2020 = 'assets/images/search2020.png';
   }
 
 }
